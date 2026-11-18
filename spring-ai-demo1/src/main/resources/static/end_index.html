@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>SSE - 自定义事件</title>
+</head>
+<body>
+<h3>/sse/end 推送的 foo 事件：</h3>
+<div id="sse"></div>
+
+<script>
+    // 连接发自定义事件的接口
+    let eventSource = new EventSource("/sse/end");
+
+    // 收 event: foo 的消息（不是 onmessage）
+    eventSource.addEventListener("foo", function(event) {
+        document.getElementById("sse").innerHTML += event.data + "<br>";
+    });
+
+    // 收结束信号，收到后主动关闭连接，阻止自动重连
+    eventSource.addEventListener("end", function(event) {
+        document.getElementById("sse").innerHTML += "【结束】" + event.data;
+        eventSource.close();
+    });
+</script>
+</body>
+</html>

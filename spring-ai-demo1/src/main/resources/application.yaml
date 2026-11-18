@@ -8,3 +8,7 @@ spring:
         options:
           model: deepseek-chat      # 或 deepseek-reasoner
           temperature: 0.7
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: debug

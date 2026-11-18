@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>SSE - retry 自动重连</title>
+</head>
+<body>
+<h3>/sse/retry 推送（每 2 秒自动重连一次）：</h3>
+<div id="sse"></div>
+
+<script>
+    // 服务端只发一条就关闭连接，靠 retry: 2000 让浏览器每 2 秒自动重连
+    let eventSource = new EventSource("/sse/retry");
+
+    // 每次重连拿到一个新时间，用 = 覆盖即可
+    eventSource.onmessage = function(event) {
+        document.getElementById("sse").innerHTML = event.data;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>SSE - 默认事件</title>
+</head>
+<body>
+<h3>/sse/data 推送的默认事件：</h3>
+<div id="sse"></div>
+
+<script>
+    // 连接只发 data 的接口
+    let eventSource = new EventSource("/sse/data");
+
+    // 默认消息用 onmessage 收
+    eventSource.onmessage = function(event) {
+        document.getElementById("sse").innerHTML += event.data + "<br>";
+    };
+</script>
+</body>
+</html>
