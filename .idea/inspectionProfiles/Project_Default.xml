@@ -10,6 +10,12 @@
           <option value="spring-ai-demo" />
           <option value="spring-ai-demo" />
           <option value="spring-ai-demo" />
+          <option value="spring-ai-ollama" />
+          <option value="spring-ai-ollama" />
+          <option value="spring-ai-ollama" />
+          <option value="spring-ai-ollama" />
+          <option value="spring-ai-ollama" />
+          <option value="spring-ai-ollama" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -19,6 +25,12 @@
           <option value="org.ow2.asm:asm:9.7.1" />
           <option value="tools.jackson.core:jackson-databind:3.1.7" />
           <option value="ch.qos.logback:logback-classic:1.5.38" />
+          <option value="net.minidev:json-smart:2.6.0" />
+          <option value="io.netty:netty-codec-http:4.2.19.Final" />
+          <option value="ch.qos.logback:logback-classic:1.5.38" />
+          <option value="tools.jackson.core:jackson-databind:3.1.7" />
+          <option value="io.netty:netty-buffer:4.2.19.Final" />
+          <option value="org.ow2.asm:asm:9.7.1" />
         </list>
       </option>
       <option name="ignoredReasons">
@@ -28,6 +40,12 @@
           <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="In progress" />
+          <option value="In progress" />
+          <option value="In progress" />
         </list>
       </option>
     </inspection_tool>

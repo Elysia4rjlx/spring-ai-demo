@@ -8,13 +8,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-ai-demo1" />
         <module name="spring-ai-demo" />
+        <module name="spring-ai-ollama" />
+        <module name="spring-alibaba" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-ollama-demo" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-ai-demo" options="-parameters" />
       <module name="spring-ai-demo1" options="-parameters" />
+      <module name="spring-ai-ollama" options="-parameters" />
+      <module name="spring-alibaba" options="-parameters" />
+      <module name="spring-ollama-demo" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,18 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: spring-alibaba
+  ai:
+    dashscope:
+      api-key: sk-ws-H.YXHIIII.4H0v.MEQCIHwhokQpYCAaTR42jjydQtxvKEFEMCNFHZ0Jf6Jy7ST2AiBXzP6cPjTTksIU97imQwLH3yVdBiZQR985k9b3V80AcQ
+      chat:
+        options:
+          model: qwen3.8-omni-flash #模型名称
+          multi-model: true #是否启⽤多模型
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    org.springframework.ai.chat.client.advisor: debug
