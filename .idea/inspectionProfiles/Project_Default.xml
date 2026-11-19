@@ -16,6 +16,10 @@
           <option value="spring-ai-ollama" />
           <option value="spring-ai-ollama" />
           <option value="spring-ai-ollama" />
+          <option value="spring-chat-bot" />
+          <option value="spring-chat-bot" />
+          <option value="spring-chat-bot" />
+          <option value="spring-chat-bot" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -31,6 +35,10 @@
           <option value="tools.jackson.core:jackson-databind:3.1.7" />
           <option value="io.netty:netty-buffer:4.2.19.Final" />
           <option value="org.ow2.asm:asm:9.7.1" />
+          <option value="org.springframework.boot:spring-boot:3.4.12" />
+          <option value="org.springframework.boot:spring-boot-autoconfigure:3.4.12" />
+          <option value="ch.qos.logback:logback-classic:1.5.21" />
+          <option value="ch.qos.logback:logback-core:1.5.21" />
         </list>
       </option>
       <option name="ignoredReasons">
@@ -46,6 +54,10 @@
           <option value="In progress" />
           <option value="In progress" />
           <option value="In progress" />
+          <option value="Not exploitable" />
+          <option value="In progress" />
+          <option value="Fixed in branch" />
+          <option value="Other" />
         </list>
       </option>
     </inspection_tool>
