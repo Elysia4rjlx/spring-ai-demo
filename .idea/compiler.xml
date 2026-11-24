@@ -20,9 +20,19 @@
         </processorPath>
         <module name="spring-chat-bot" />
       </profile>
+      <profile name="Annotation profile for spring-zhipu" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../Maven/.m2/repository/org/projectlombok/lombok/1.18.48/lombok-1.18.48.jar" />
+        </processorPath>
+        <module name="spring-zhipu" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-ollama-demo" target="21" />
+      <module name="spring-zhipu-demo" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,6 +43,8 @@
       <module name="spring-alibaba" options="-parameters" />
       <module name="spring-chat-bot" options="-parameters" />
       <module name="spring-ollama-demo" options="-parameters" />
+      <module name="spring-zhipu" options="-parameters" />
+      <module name="spring-zhipu-demo" options="-parameters" />
     </option>
   </component>
 </project>

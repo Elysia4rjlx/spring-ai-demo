@@ -24,11 +24,21 @@ public class CommonConfiguration {
     @Bean
     public ChatClient ollamaChatClient(OllamaChatModel model,ChatMemory chatMemory) {
         return ChatClient.builder(model)
-                .defaultSystem("你是Claude，一个由 Anthropic 公司开发的大型语言模型")
+//                .defaultSystem("你是Claude，一个由 Anthropic 公司开发的大型语言模型")
+                .defaultSystem("你叫龙浩然，擅长唱，跳，rap")
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build()
                         ,new SimpleLoggerAdvisor())
                 .build();
     }
+
+//    @Bean
+//    public ChatClient DeepseekChatClient(DeepSeekChatModel model, ChatMemory chatMemory) {
+//        return ChatClient.builder(model)
+//                .defaultSystem("你是Claude，一个由 Anthropic 公司开发的大型语言模型")
+//                .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build()
+//                        ,new SimpleLoggerAdvisor())
+//                .build();
+//    }
 
 
 }

@@ -5,7 +5,7 @@ spring:
     name: spring-alibaba
   ai:
     dashscope:
-      api-key:
+      api-key: sk-ws-H.YXHIIII.4H0v.MEQCIHwhokQpYCAaTR42jjydQtxvKEFEMCNFHZ0Jf6Jy7ST2AiBXzP6cPjTTksIU97imQwLH3yVdBiZQR985k9b3V80AcQ
       chat:
         options:
           model: qwen3.8-omni-flash #模型名称

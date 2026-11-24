@@ -1,0 +1,20 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: spring-zhipu
+  ai:
+    openai:
+      api-key: ${ZHIPU_API_KEY}
+      base-url: https://open.bigmodel.cn/api/paas/v4
+      chat:
+        model: glm-4.7-flash
+      image:
+        model: cogview-3-flash
+        response-format: url
+
+
+logging:
+  level:
+    org.springframework.ai: trace

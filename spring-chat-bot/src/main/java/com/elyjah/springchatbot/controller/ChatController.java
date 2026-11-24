@@ -22,6 +22,17 @@ import java.util.stream.Collectors;
 public class ChatController {
 
     private final ChatClient chatClient;
+    //构造方法注入
+    public ChatController(ChatClient omllamaChatClient) {
+        this.chatClient = omllamaChatClient;
+    }
+
+//
+//    private final ChatClient deepseekChatClient;
+//        public ChatController(ChatClient deepseekChatClient) {
+//        this.deepseekChatClient = deepseekChatClient;
+//    }
+
 
     @Autowired
     private ChatHistoryRepository chatHistoryRepository;
@@ -29,9 +40,7 @@ public class ChatController {
     @Autowired
     private ChatMemory chatMemory;
 
-    public ChatController(ChatClient omllamaChatClient) {
-        this.chatClient = omllamaChatClient;
-    }
+
 
     @RequestMapping(value = "/stream", produces = "text/html;charset=utf-8")
     public Flux<String> stream(String prompt, String conversationId) {

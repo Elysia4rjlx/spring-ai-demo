@@ -20,6 +20,7 @@
           <option value="spring-chat-bot" />
           <option value="spring-chat-bot" />
           <option value="spring-chat-bot" />
+          <option value="spring-chat-bot" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -39,6 +40,7 @@
           <option value="org.springframework.boot:spring-boot-autoconfigure:3.4.12" />
           <option value="ch.qos.logback:logback-classic:1.5.21" />
           <option value="ch.qos.logback:logback-core:1.5.21" />
+          <option value="org.springframework.boot:spring-boot:3.5.8" />
         </list>
       </option>
       <option name="ignoredReasons">
@@ -58,6 +60,7 @@
           <option value="In progress" />
           <option value="Fixed in branch" />
           <option value="Other" />
+          <option value="Not exploitable" />
         </list>
       </option>
     </inspection_tool>
