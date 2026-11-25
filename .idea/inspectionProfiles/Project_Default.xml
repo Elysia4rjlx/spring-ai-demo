@@ -21,6 +21,7 @@
           <option value="spring-chat-bot" />
           <option value="spring-chat-bot" />
           <option value="spring-chat-bot" />
+          <option value="spring-alibaba-learning" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -41,6 +42,7 @@
           <option value="ch.qos.logback:logback-classic:1.5.21" />
           <option value="ch.qos.logback:logback-core:1.5.21" />
           <option value="org.springframework.boot:spring-boot:3.5.8" />
+          <option value="com.fasterxml.jackson.core:jackson-databind:2.19.4" />
         </list>
       </option>
       <option name="ignoredReasons">
@@ -60,6 +62,7 @@
           <option value="In progress" />
           <option value="Fixed in branch" />
           <option value="Other" />
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
         </list>
       </option>

@@ -1,0 +1,22 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: spring-alibaba-learning
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+      chat:
+        options:
+          model: qwen-mt-flash
+      image:
+        options:
+          model: wan2.2-t2i-flash
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    #    root: debug
+    org.springframework.ai.retry.autoconfigure: error

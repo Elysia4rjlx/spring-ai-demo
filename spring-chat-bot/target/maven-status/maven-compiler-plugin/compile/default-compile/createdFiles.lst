@@ -1,0 +1,8 @@
+com\elyjah\springchatbot\domain\MessageV0$1.class
+com\elyjah\springchatbot\domain\MessageV0.class
+com\elyjah\springchatbot\controller\ChatController.class
+com\elyjah\springchatbot\domain\ChatInfo.class
+com\elyjah\springchatbot\SpringChatBotApplication.class
+com\elyjah\springchatbot\repository\ChatHistoryRepository.class
+com\elyjah\springchatbot\repository\MemoryChatHistory.class
+com\elyjah\springchatbot\config\CommonConfiguration.class

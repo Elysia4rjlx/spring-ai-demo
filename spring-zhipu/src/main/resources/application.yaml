@@ -13,6 +13,13 @@ spring:
       image:
         model: cogview-3-flash
         response-format: url
+      audio:
+        speech:
+          model: glm-tts
+          voice: female
+          response-format: wav
+          speed: 1.0
+
 
 
 logging:

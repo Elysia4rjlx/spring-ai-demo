@@ -12,10 +12,13 @@
         <option value="$PROJECT_DIR$/spring-chat-bot/pom.xml" />
         <option value="$PROJECT_DIR$/spring-qianfan-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-zhipu/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-alibaba-project/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-alibaba-learning/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/spring-alibaba-project/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ollama-demo/pom.xml" />
       </set>
     </option>

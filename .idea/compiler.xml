@@ -11,15 +11,6 @@
         <module name="spring-ai-ollama" />
         <module name="spring-alibaba" />
       </profile>
-      <profile name="Annotation profile for spring-chat-bot" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../../../Maven/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
-        </processorPath>
-        <module name="spring-chat-bot" />
-      </profile>
       <profile name="Annotation profile for spring-zhipu" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -29,8 +20,27 @@
         </processorPath>
         <module name="spring-zhipu" />
       </profile>
+      <profile name="Annotation profile for spring-chat-bot" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../Maven/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="spring-chat-bot" />
+      </profile>
+      <profile name="Annotation profile for spring-alibaba-learning" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="spring-alibaba-learning" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-alibaba-project" target="21" />
       <module name="spring-ollama-demo" target="21" />
       <module name="spring-zhipu-demo" target="21" />
     </bytecodeTargetLevel>
@@ -41,6 +51,8 @@
       <module name="spring-ai-demo1" options="-parameters" />
       <module name="spring-ai-ollama" options="-parameters" />
       <module name="spring-alibaba" options="-parameters" />
+      <module name="spring-alibaba-learning" options="-parameters" />
+      <module name="spring-alibaba-project" options="-parameters" />
       <module name="spring-chat-bot" options="-parameters" />
       <module name="spring-ollama-demo" options="-parameters" />
       <module name="spring-zhipu" options="-parameters" />

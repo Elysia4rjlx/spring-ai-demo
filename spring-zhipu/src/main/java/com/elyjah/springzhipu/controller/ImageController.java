@@ -122,7 +122,8 @@ public class ImageController {
                 .responseFormat("url")
                 .build();
 
-        ImageResponse response = imageModel.call(new ImagePrompt("一只梳着银发中分，穿着背带裤，打着篮球的鸡", options));
+        ImageResponse response = imageModel.call(new ImagePrompt("一只梳着银发中分，穿着背带裤，打着篮球的鸡"
+                , options));
 
         // getResults()：拿全部，遍历
         StringBuilder sb = new StringBuilder();
