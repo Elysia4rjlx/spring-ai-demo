@@ -12,6 +12,11 @@ spring:
       image:
         options:
           model: wan2.2-t2i-flash
+      audio:
+        sysnthesis:
+          options:
+            model:cosyvoice-v1
+          voice: longwan
 
 logging:
   pattern:
