@@ -25,7 +25,7 @@ public class CommonConfiguration {
     public ChatClient ollamaChatClient(OllamaChatModel model,ChatMemory chatMemory) {
         return ChatClient.builder(model)
 //                .defaultSystem("你是Claude，一个由 Anthropic 公司开发的大型语言模型")
-                .defaultSystem("你叫龙浩然，擅长唱，跳，rap")
+                .defaultSystem("你叫Claude")
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build()
                         ,new SimpleLoggerAdvisor())
                 .build();

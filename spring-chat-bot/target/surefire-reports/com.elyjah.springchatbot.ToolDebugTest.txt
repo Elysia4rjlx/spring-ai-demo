@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.elyjah.springchatbot.ToolDebugTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.058 s <<< FAILURE! -- in com.elyjah.springchatbot.ToolDebugTest
+com.elyjah.springchatbot.ToolDebugTest.buildToolCallback -- Time elapsed: 0.033 s <<< ERROR!
+java.lang.IllegalArgumentException: inputSchema cannot be null or empty
+	at org.springframework.util.Assert.hasText(Assert.java:253)
+	at org.springframework.ai.tool.definition.DefaultToolDefinition.<init>(DefaultToolDefinition.java:34)
+	at org.springframework.ai.tool.definition.DefaultToolDefinition$Builder.build(DefaultToolDefinition.java:72)
+	at com.elyjah.springchatbot.ToolDebugTest.buildToolCallback(ToolDebugTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
